@@ -40,6 +40,7 @@ source poky/oe-init-build-env
 #CONFLINE="MACHINE = \"qemuarm64\""
 add_conf "MACHINE = \"raspberrypi3-64\"" #https://meta-raspberrypi.readthedocs.io/en/latest/layer-contents.html#supported-machines
 add_conf "LICENSE_FLAGS_ACCEPTED = \"synaptics-killswitch\"" # https://meta-raspberrypi.readthedocs.io/en/latest/ipcompliance.html#linux-firmware-rpidistro
+add_conf "ENABLE_UART = \"1\"" # https://meta-raspberrypi.readthedocs.io/en/latest/ipcompliance.html#linux-firmware-rpidistro
 
 add_layer "meta-raspberrypi"
 add_layer "meta-openembedded/meta-oe" # Required for meta-python
