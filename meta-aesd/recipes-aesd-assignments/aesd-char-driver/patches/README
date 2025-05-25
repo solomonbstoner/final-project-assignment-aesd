@@ -1,0 +1,9 @@
+After the patch is generated from Assignments-3-and-later, its file path has to be manually changed from
+
+`aesd-char-driver/Makefile`
+
+to
+
+`Makefile`
+
+This is beause the working directory of the recipe is already set to `aesd-char-driver`. So the original patch `aesd-char-driver/Makefile` makes BitBake look for `aesd-char-driver/aesd-char-driver/Makefile`, which doesnt exist.
